@@ -9,6 +9,7 @@
 
  */
 // 1  By object literal
+/*
 emp={id:10,name:"ns",age:26};
 console.log("id:"+emp.id + " name: "+emp.name+" Age: "+emp.age);
 
@@ -28,3 +29,21 @@ function e(id,name,age){
 emp=new e (12,"ganesh",26);
 console.log("id:"+emp.id + " name: "+emp.name+" Age: "+emp.age);
 
+*/
+
+// Defining method in JavaScript Object*****************
+function emp(id,name,salary){  
+    this.id=id;  
+    this.name=name;  
+    this.salary=salary;  
+      
+    this.changeSalary=changeSalary;  
+    function changeSalary(otherSalary){  
+    this.salary=otherSalary;  
+    }  
+    }  
+    e=new emp(103,"Sonoo Jaiswal",30000);  
+   console.log(e.id+" "+e.name+" "+e.salary);  
+    e.changeSalary(45000);  
+   console.log(+e.id+" "+e.name+" "+e.salary);  
+    
