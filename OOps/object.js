@@ -8,3 +8,23 @@
   *By using an object constructor (using new keyword)
 
  */
+// 1  By object literal
+emp={id:10,name:"ns",age:26};
+console.log("id:"+emp.id + " name: "+emp.name+" Age: "+emp.age);
+
+// 2-By creating instance of Object directly 
+var n=new Object();
+n.id=10;
+n.name="ravi";
+n.age=25;
+console.log("id:"+n.id + " name:"+n.name+" Age:"+n.age);
+
+// 3-By using an object constructor 
+function e(id,name,age){
+    this.id=id
+    this.name=name;
+    this.age=age;
+}
+emp=new e (12,"ganesh",26);
+console.log("id:"+emp.id + " name: "+emp.name+" Age: "+emp.age);
+
