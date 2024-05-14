@@ -17,8 +17,12 @@ class E{
         return this.id;
     }
 }
+
 var e=new E();
 e.setName("ram")
 e.setId(123)
 console.log(e.getName());
 console.log(e.getId())
+
+
+
