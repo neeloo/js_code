@@ -32,6 +32,7 @@ console.log("id:"+emp.id + " name: "+emp.name+" Age: "+emp.age);
 */
 
 // Defining method in JavaScript Object*****************
+
 function emp(id,name,salary){  
     this.id=id;  
     this.name=name;  
